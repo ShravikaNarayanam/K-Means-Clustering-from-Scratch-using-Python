@@ -15,7 +15,9 @@ Step2: Elucidean distance is calculated between initial centroid and all data po
 Step3: Find the maximum distance and the corresponding data point. This becomes the next centroid
 Step4: A if loop is run to repeat step3 till the number of centroids determined equals the number of clusters,k. If the centroid gets repeated, the distance and the corresponding datapoint is deleted and the next maximum distance and its point is the new centroid. 
 
-### Silhouette Method: This method is used to calculate optimum number od clusters k based on "Silhouette Coefficient" (SC). It can be calculated with any distance metric, such as the Euclidean distance or the Manhattan distance, This solution uses Euclidean distance.
+### Silhouette Method: This method is used to calculate optimum number od clusters k based on "Silhouette Coefficient" (SC). 
+It can be calculated with any distance metric, such as the Euclidean distance or the Manhattan distance, This solution uses Euclidean distance.
+
 Assume the data have been clustered, For data point {i} in C{i} 
 ai = (1/|Ci| - 1) * Σ d(i,j)
 where i ≠ j, j ∈ Ci
@@ -48,6 +50,6 @@ For a predefined value of k clusters of dataset D, SC is calculated for each k. 
 2. Isolated data points not belong to any cluster: Based on above created dictionary, the clusters with single data points are considered as outliers.
 3. A data point belongs to a cluster with more than 2 standard deviations: Mean, SD and Mean ± 2*SD for each dimension is calculated at cluster level and points not in this range (95% confidence level) as detected as anomalies.
  
- ![Alt Text](https://commons.wikimedia.org/wiki/File:K-means_convergence.gif#/media/File:K-means_convergence.gif)
+ ![K-Means](https://commons.wikimedia.org/wiki/File:K-means_convergence.gif#/media/File:K-means_convergence.gif)
  
  Souce: https://commons.wikimedia.org/
