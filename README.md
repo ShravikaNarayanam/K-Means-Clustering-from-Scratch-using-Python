@@ -50,6 +50,4 @@ For a predefined value of k clusters of dataset D, SC is calculated for each k. 
 2. Isolated data points not belong to any cluster: Based on above created dictionary, the clusters with single data points are considered as outliers.
 3. A data point belongs to a cluster with more than 2 standard deviations: Mean, SD and Mean ± 2*SD for each dimension is calculated at cluster level and points not in this range (95% confidence level) as detected as anomalies.
  
- ![K-Means](https://commons.wikimedia.org/wiki/File:K-means_convergence.gif#/media/File:K-means_convergence.gif)
- 
  Souce: https://commons.wikimedia.org/
